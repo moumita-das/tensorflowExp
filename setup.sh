@@ -10,7 +10,9 @@ sudo apt -y update
 sudo apt install -y git
 sudo pip3 install -r requirements.txt
 sudo pip install -r requirements.txt
-#sudo git clone https://github.com/googlecodelabs/tensorflow-for-poets-2
+[ -d tensorflow-for-poets-2 ] || sudo git clone https://github.com/googlecodelabs/tensorflow-for-poets-2
+chmod -R a-x tensorflow-for-poets-2
+chmod -R a+rwX tensorflow-for-poets-2
 cd tensorflow-for-poets-2
 #sudo wget http://download.tensorflow.org/example_images/flower_photos.tgz
 #tar -zxvf flower_photos.tgz -C tf_files
